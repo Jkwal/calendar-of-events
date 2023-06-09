@@ -1,13 +1,35 @@
 {
   "files": {
-    "main.css": "/calendar-of-events/static/css/main.cdd1937e.css",
-    "main.js": "/calendar-of-events/static/js/main.7f475789.js",
+    "main.css": "/calendar-of-events/static/css/main.a1ffaf18.css",
+    "main.js": "/calendar-of-events/static/js/main.adbb8d9f.js",
+    "static/media/SFProDisplay-Semibold.eot": "/calendar-of-events/static/media/SFProDisplay-Semibold.a909a57a0c2db31e17fc.eot",
+    "static/media/SFProDisplay-Semibold.ttf": "/calendar-of-events/static/media/SFProDisplay-Semibold.dfc89e609e62dde18375.ttf",
+    "static/media/SFProDisplay-Medium.eot": "/calendar-of-events/static/media/SFProDisplay-Medium.c227ee1b22a21ca9441a.eot",
+    "static/media/SFProDisplay-Medium.ttf": "/calendar-of-events/static/media/SFProDisplay-Medium.7fe92bb1fe75c84e473a.ttf",
+    "static/media/SFProDisplay-Regular.eot": "/calendar-of-events/static/media/SFProDisplay-Regular.ea1b407b07b1c65ddb67.eot",
+    "static/media/SFProDisplay-Regular.ttf": "/calendar-of-events/static/media/SFProDisplay-Regular.6b109fecbc7563467e36.ttf",
+    "static/media/SFProDisplay-Semibold.woff": "/calendar-of-events/static/media/SFProDisplay-Semibold.340c3a1a6dddb0b99476.woff",
+    "static/media/SFProDisplay-Medium.woff": "/calendar-of-events/static/media/SFProDisplay-Medium.7274e74c05adf47dbcd9.woff",
+    "static/media/SFProDisplay-Regular.woff": "/calendar-of-events/static/media/SFProDisplay-Regular.7ee14c637e39445d7093.woff",
+    "static/media/SFProDisplay-Semibold.woff2": "/calendar-of-events/static/media/SFProDisplay-Semibold.3926eb65ce4420a81930.woff2",
+    "static/media/SFProDisplay-Medium.woff2": "/calendar-of-events/static/media/SFProDisplay-Medium.22a99d36f90cc52d2914.woff2",
+    "static/media/SFProDisplay-Regular.woff2": "/calendar-of-events/static/media/SFProDisplay-Regular.d5ff9f6824d2c6607361.woff2",
+    "static/media/logo-M.svg": "/calendar-of-events/static/media/logo-M.9e458fe2e110c4a0a6c76c25e3ab938e.svg",
+    "static/media/logo-S.svg": "/calendar-of-events/static/media/logo-S.9d47cdca17abf20147d2467d9f455d62.svg",
+    "static/media/abstraction_left-L.svg": "/calendar-of-events/static/media/abstraction_left-L.a7c2eb7dca51403d06492ccb42faf262.svg",
+    "static/media/abstraction_right-L.svg": "/calendar-of-events/static/media/abstraction_right-L.8d4caccc2e93305e6b694d70567fe920.svg",
+    "static/media/abstraction_left-M.svg": "/calendar-of-events/static/media/abstraction_left-M.e49fb51523019e576d2e82499b352e45.svg",
+    "static/media/abstraction_left-S.svg": "/calendar-of-events/static/media/abstraction_left-S.8367b8e9fe1c72936456200abcd2be43.svg",
+    "static/media/abstraction_right-S.svg": "/calendar-of-events/static/media/abstraction_right-S.d83baba6f817b68f4f3c2177bb9cc8a7.svg",
+    "static/media/abstraction_right-M.svg": "/calendar-of-events/static/media/abstraction_right-M.936fe768087c390992db81247af7d111.svg",
     "index.html": "/calendar-of-events/index.html",
-    "main.cdd1937e.css.map": "/calendar-of-events/static/css/main.cdd1937e.css.map",
-    "main.7f475789.js.map": "/calendar-of-events/static/js/main.7f475789.js.map"
+    "static/media/arrow_right.svg": "/calendar-of-events/static/media/arrow_right.e6db47c2f236770bfbd1026a4f080970.svg",
+    "static/media/arrow_down.svg": "/calendar-of-events/static/media/arrow_down.ad9f2ffde9cf9c056b484366b6dc5f76.svg",
+    "main.a1ffaf18.css.map": "/calendar-of-events/static/css/main.a1ffaf18.css.map",
+    "main.adbb8d9f.js.map": "/calendar-of-events/static/js/main.adbb8d9f.js.map"
   },
   "entrypoints": [
-    "static/css/main.cdd1937e.css",
-    "static/js/main.7f475789.js"
+    "static/css/main.a1ffaf18.css",
+    "static/js/main.adbb8d9f.js"
   ]
 }
