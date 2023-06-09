@@ -10,20 +10,46 @@
 }
 
 .wrapper {
+  padding-bottom: 20px;
   margin-top: 46px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    margin-top: 100px;
+  }
+
+  @media (max-width: 360px) {
+    margin-top: 70px;
+  }
 }
 
-.topLeftSVG {
+.LeftSvg {
   position: absolute;
   top: 0;
   left: 0;
+
+  @media (max-width: 1100px) {
+    left: -50px;
+  }
+
+  @media (max-width: 1100px) {
+    left: -100px;
+  }
+
+  @media (min-width: 769px) and (max-width: 900px) {
+    left: -170px;
+  }
+
+  @media (max-width: 768px) {
+    left: 0;
+  }
 }
 
-.topRightSVG {
+.RightSvg {
   position: absolute;
   top: 0;
   right: 0;
