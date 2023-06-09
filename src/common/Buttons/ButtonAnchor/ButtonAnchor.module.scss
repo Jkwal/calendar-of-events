@@ -1,0 +1,22 @@
+.buttonAnchor {
+  position: relative;
+
+  width: 240px;
+  min-height: 60px;
+
+  background-color: rgba(0, 0, 0, 0);
+
+  .arrow {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+  }
+}
+
+.text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+
+  color: #FFFFFF;
+}
