@@ -9,3 +9,22 @@
   align-items: center;
 }
 
+.wrapper {
+  margin-top: 46px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topLeftSVG {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.topRightSVG {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

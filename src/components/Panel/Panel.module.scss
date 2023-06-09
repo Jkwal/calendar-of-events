@@ -1,10 +1,23 @@
 .panel {
   width: 100%;
-  min-height: 192px;
+  min-height: 193px;
+  padding-right: 78px;
 
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 
   background-color: #162C4E;
+
+  form {
+    margin-top: -13px;
+  }
+}
+
+.wrapper {
+  width: calc(60% - 3px);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

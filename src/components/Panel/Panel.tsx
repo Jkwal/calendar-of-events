@@ -7,10 +7,14 @@ import {SubscriptionForm} from "components";
 
 
 export const Panel: FC = () => {
-	return (
-		<div className={style.panel}>
-			<SubscriptionForm/>
-			<ButtonAnchor>Other Events</ButtonAnchor>
-		</div>
-	)
+
+    return (
+        <div className={style.panel}>
+            <div className={style.wrapper}>
+                <SubscriptionForm/>
+                <ButtonAnchor>Other Events</ButtonAnchor>
+            </div>
+
+        </div>
+    )
 }
