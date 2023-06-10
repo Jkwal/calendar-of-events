@@ -1,14 +1,16 @@
+@import "styles/variables";
+
 .timer {
-  width: 100%;
+  width: 90%;
   margin-top: 34px;
 
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
   @media (max-width: 768px) {
     width: 80%;
-    justify-content: space-between;
+
 
     @media (max-width: 360px) {
       width: 86%;
@@ -22,5 +24,25 @@
 
   @media (max-width: 768px) {
     margin-top: 10px;
+  }
+}
+
+
+.marginAnimation {
+  animation-duration: $animation-duration;
+  animation-name: marginAnimation;
+  animation-iteration-count: 1;
+  animation-delay: 1.7s;
+}
+
+@keyframes marginAnimation {
+  from {
+    opacity: 0;
+    margin-top: 0;
+  }
+
+  to {
+    opacity: 1;
+    margin-top: 34px;
   }
 }

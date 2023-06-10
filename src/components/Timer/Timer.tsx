@@ -3,82 +3,72 @@ import {FC, useEffect, useState} from "react";
 import styles from './Timer.module.scss';
 
 import {DialElement} from "components";
+import {calculateTime, onAnimationStart} from "utils";
 import {ReactComponent as SeparatorM} from "assets/icons/separator-M.svg";
 import {ReactComponent as SeparatorS} from "assets/icons/separator-S.svg";
 
 
 interface TimerProps {
-    windowSize: number;
+  windowSize: number;
 }
 
 
 export const Timer: FC<TimerProps> = ({windowSize}) => {
-    const [days, setDays] = useState(0);
-    const [hours, setHours] = useState(0);
-    const [minutes, setMinutes] = useState(0);
-    const [seconds, setSeconds] = useState(0);
+  const [days, setDays] = useState(calculateTime('Days'));
+  const [hours, setHours] = useState(calculateTime('Hours'));
+  const [minutes, setMinutes] = useState(calculateTime('Minutes'));
+  const [seconds, setSeconds] = useState(calculateTime('Seconds'));
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            const targetDate = new Date();
-            const countdownDate = new Date('2023-07-24');
-            const difference = countdownDate.getTime() - targetDate.getTime();
 
-            const calculatedDays = Math.floor(difference / (1000 * 60 * 60 * 24));
-            const calculatedHours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const calculatedMinutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-            const calculatedSeconds = Math.floor((difference % (1000 * 60)) / 1000);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setDays(calculateTime('Days'));
+      setHours(calculateTime('Hours'));
+      setMinutes(calculateTime('Minutes'));
+      setSeconds(calculateTime('Seconds'));
+    }, 1000);
 
-            setDays(calculatedDays);
-            setHours(calculatedHours);
-            setMinutes(calculatedMinutes);
-            setSeconds(calculatedSeconds);
-        }, 1000);
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
 
-        return () => {
-            clearInterval(interval);
-        };
-    }, []);
+  const SeparatorComponent = windowSize >= 769 ? SeparatorM : SeparatorS;
 
-    let SeparatorComponent;
+  return (
+    <div
+      className={`${styles.timer} ${styles.marginAnimation} no-margin`}
+      onAnimationStart={onAnimationStart}
+    >
+      <DialElement
+        time={days}
+        unit={'Days'}
+        windowSize={windowSize}
+      />
 
-    if (windowSize >= 769) {
-        SeparatorComponent = SeparatorM;
-    } else {
-        SeparatorComponent = SeparatorS;
-    }
+      <SeparatorComponent className={styles.sepatator}/>
 
-    return (
-        <div className={styles.timer}>
-            <DialElement
-                time={days}
-                unit={'Days'}
-                windowSize={windowSize}
-            />
+      <DialElement
+        time={hours}
+        unit={'Hours'}
+        windowSize={windowSize}
+      />
 
-            <SeparatorComponent className={styles.sepatator}/>
+      <SeparatorComponent className={styles.sepatator}/>
 
-            <DialElement
-                time={hours}
-                unit={'Hours'}
-                windowSize={windowSize}
-            />
+      <DialElement
+        time={minutes}
+        unit={'Minutes'}
+        windowSize={windowSize}
+      />
 
-            <SeparatorComponent className={styles.sepatator}/>
+      <SeparatorComponent className={styles.sepatator}/>
 
-            <DialElement
-                time={minutes}
-                unit={'Minutes'}
-                windowSize={windowSize}
-            />
-
-            <SeparatorComponent className={styles.sepatator}/>
-
-            <DialElement
-                time={seconds}
-                unit={'Seconds'}
-                windowSize={windowSize}
-            />
-        </div>
-    );
+      <DialElement
+        time={seconds}
+        unit={'Seconds'}
+        windowSize={windowSize}
+      />
+    </div>
+  );
 };

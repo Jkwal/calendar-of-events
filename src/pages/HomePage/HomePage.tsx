@@ -6,10 +6,10 @@ import {EventsScreen, MainScreen} from "components";
 
 
 export const HomePage: FC = () => {
-	return (
-		<main className={styles.homePage}>
-			<MainScreen/>
-			<EventsScreen/>
-		</main>
-	)
+  return (
+    <main className={styles.homePage}>
+      <MainScreen/>
+      <EventsScreen/>
+    </main>
+  )
 }

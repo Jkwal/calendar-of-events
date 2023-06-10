@@ -7,7 +7,7 @@
     top: 8px;
     right: 8px;
 
-    @media (min-width: 361px) and (max-width: 768px) {
+    @media (max-width: 768px) {
       top: 4px;
       right: 4px;
     }
@@ -23,7 +23,7 @@
     width: 280px;
   }
 
-  @media (min-width: 361px) and (max-width: 768px) {
+  @media (max-width: 768px) {
     width: 360px;
   }
 }

@@ -6,15 +6,20 @@ import {ReactComponent as ArrowRight} from 'assets/icons/arrow_right.svg';
 
 
 interface ButtonLinkProps {
-    children: ReactNode;
+  children: ReactNode;
 }
 
 
 export const ButtonLink: FC<ButtonLinkProps> = ({children}) => {
-    return (
-        <button className={styles.buttonLink}>
-            <a className={styles.link} href={'/asd'}>{children}</a>
-            <ArrowRight className={styles.arrow}/>
-        </button>
-    )
+  return (
+    <a
+      target="_blank"
+      className={styles.buttonLink}
+      rel="noopener noreferrer"
+      href="https://www.google.com/"
+    >
+      {children}
+      <ArrowRight className={styles.arrow}/>
+    </a>
+  )
 }

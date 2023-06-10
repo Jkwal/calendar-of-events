@@ -1,5 +1,7 @@
+@import "styles/variables";
+
 .checkEvent {
-  margin-top:70px;
+  margin-top: 70px;
 
   display: flex;
   flex-direction: column;
@@ -10,7 +12,7 @@
     margin-top: 60px;
   }
 
-  @media (max-width: 360px){
+  @media (max-width: 360px) {
     margin-top: 50px;
   }
 }
@@ -23,5 +25,25 @@
   @media(max-width: 768px) {
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+
+.marginAnimation {
+  animation-duration: $animation-duration;
+  animation-name: marginAnimation;
+  animation-iteration-count: 1;
+  animation-delay: 2.7s;
+}
+
+@keyframes marginAnimation {
+  from {
+    opacity: 0;
+    margin-top: 0;
+  }
+
+  to {
+    opacity: 1;
+    margin-top: 70px;
   }
 }
