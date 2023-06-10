@@ -71,7 +71,10 @@ export const MainScreen: FC = () => {
             onAnimationStart={onAnimationStart}
           />
 
-          <Title/>
+          <Title
+            heading='Under Construction'
+            subHeading={`We're making lots of improvements and will be back soon`}
+          />
 
           <Timer windowSize={windowSize}/>
 

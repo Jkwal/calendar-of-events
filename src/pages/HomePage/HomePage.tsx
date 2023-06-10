@@ -2,7 +2,7 @@ import {FC} from "react";
 
 import styles from './HomePage.module.scss';
 
-import {EventsScreen, MainScreen} from "components";
+import {EventsScreen, MainScreen} from "screens";
 
 
 export const HomePage: FC = () => {

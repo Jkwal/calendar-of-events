@@ -16,7 +16,7 @@ export const ButtonLink: FC<ButtonLinkProps> = ({children}) => {
       target="_blank"
       className={styles.buttonLink}
       rel="noopener noreferrer"
-      href="https://www.google.com/"
+      href="https://egorovagency.com/#main"
     >
       {children}
       <ArrowRight className={styles.arrow}/>
