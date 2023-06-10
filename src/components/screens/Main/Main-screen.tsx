@@ -61,7 +61,7 @@ export const MainScreen: FC = () => {
             <div className={styles.wrapper}>
                 <LogoComponent/>
                 <Title/>
-                <Timer/>
+                <Timer windowSize={windowSize}/>
                 <CheckEvent/>
             </div>
 

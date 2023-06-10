@@ -1,0 +1,44 @@
+.dialElement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time {
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 72px;
+
+  color: #162C4E;
+
+  @media (max-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.timerWrapper {
+  position: relative;
+}
+
+.timerElement {
+
+}
+
+.unit {
+  position: absolute;
+  top: 45%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+
+  color: #FFFFFF;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
