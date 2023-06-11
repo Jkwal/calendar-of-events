@@ -66,10 +66,13 @@ export const MainScreen: FC = () => {
 
         <div className={styles.wrapper}>
 
-          <LogoComponent
-            className={`${styles.logo} ${styles.marginAnimation} no-margin`}
-            onAnimationStart={onAnimationStart}
-          />
+          <a href='/'>
+            <LogoComponent
+              className={`${styles.logo} ${styles.marginAnimation} no-margin`}
+              onAnimationStart={onAnimationStart}
+            />
+          </a>
+
 
           <Title
             heading='Under Construction'

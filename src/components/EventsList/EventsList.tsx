@@ -12,9 +12,7 @@ export const EventsList: FC = () => {
     <div className={styles.eventList}>
       {
         mockEvents.map((item) => (
-          <li key={item.id}>
-            <EventItem item={item}/>
-          </li>
+            <EventItem key={item.id} item={item}/>
         ))
       }
     </div>
