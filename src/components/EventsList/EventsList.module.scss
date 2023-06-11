@@ -1,9 +1,9 @@
 .eventList {
   width: 100%;
-  //max-width: 1705px;
   margin-top: 40px;
 
   display: flex;
+  justify-content: center;
 
   @media (max-width: 768px) {
     flex-direction: column;

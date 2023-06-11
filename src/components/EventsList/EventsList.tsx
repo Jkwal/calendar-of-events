@@ -1,18 +1,25 @@
-import {FC} from "react";
+import {FC, useState} from "react";
 
 import styles from './EventsList.module.scss';
 
-import {mockEvents} from "utils";
+import {ImockEvent, mockEvents} from "utils";
 import {EventItem} from "components";
 
 
 export const EventsList: FC = () => {
 
+  const [activeEventItem, setActiveEventItem] = useState<ImockEvent>(mockEvents[0])
+
   return (
     <div className={styles.eventList}>
       {
         mockEvents.map((item) => (
-            <EventItem key={item.id} item={item}/>
+          <EventItem
+            isActive={activeEventItem === item}
+            setActiveEventItem={setActiveEventItem}
+            key={item.id}
+            item={item}
+          />
         ))
       }
     </div>

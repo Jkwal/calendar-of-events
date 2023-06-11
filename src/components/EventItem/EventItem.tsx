@@ -7,9 +7,15 @@ import {ButtonEventItem} from "common";
 
 interface EventItemProps {
   item: ImockEvent;
+  isActive: boolean;
+  setActiveEventItem: (item: ImockEvent) => void;
 }
 
-export const EventItem: FC<EventItemProps> = ({item}) => {
+export const EventItem: FC<EventItemProps> = ({
+                                                item,
+                                                isActive,
+                                                setActiveEventItem
+                                              }) => {
 
   const backgroundStyle = {
     backgroundImage: `linear-gradient(180deg, rgba(22, 44, 78, 0) 0%, #162C4E 100%), url(${item.image})`,
@@ -20,29 +26,34 @@ export const EventItem: FC<EventItemProps> = ({item}) => {
   };
 
   return (
-    <div className={styles.event}>
-      <div className={styles.title} style={backgroundStyle}>
-
+    <div className={`${styles.event} ${isActive ? styles.active : ''}`}>
+      <div
+        style={backgroundStyle}
+        className={styles.title}
+        onClick={() => !isActive ? setActiveEventItem(item) : null}
+      >
         <div className={styles.name}>{item.name}</div>
         <div className={styles.number}>0{item.id}</div>
-
       </div>
 
-      <div className={styles.description} style={backgroundStyleDescription}>
+      <div className={styles.animationWrapper}>
+        <div className={styles.description} style={backgroundStyleDescription}>
 
-        <div className={styles.info}>
-          <p className={styles.backgroundNumber}>
-            0{item.id}
-          </p>
+          <div className={styles.info}>
+            <p className={styles.backgroundNumber}>
+              0{item.id}
+            </p>
 
-          <div className={styles.wrapper}>
-            <h3 className={styles.descriptionName}>{item.name}</h3>
-            <p className={styles.date}>{item.date}</p>
-            <ButtonEventItem>More Information</ButtonEventItem>
+            <div className={styles.wrapper}>
+              <h3 className={styles.descriptionName}>{item.name}</h3>
+              <p className={styles.date}>{item.date}</p>
+              <ButtonEventItem>More Information</ButtonEventItem>
 
+            </div>
           </div>
         </div>
       </div>
+
     </div>
   )
 }
