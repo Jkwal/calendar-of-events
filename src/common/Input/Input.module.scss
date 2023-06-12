@@ -17,10 +17,15 @@
   background-color: #FFFFFF;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
 
-
   @media(max-width: 768px) {
     min-height: 41px;
     font-size: 14px;
     line-height: 21px;
   }
 }
+
+.input.invalid {
+  outline: 2px solid #FF1E00;
+  border:none;
+}
+

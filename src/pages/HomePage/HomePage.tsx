@@ -24,7 +24,8 @@ export const HomePage: FC = () => {
   }, []);
 
   return (
-    <main className={styles.homePage}>
+    <main
+      className={styles.homePage}>
       <MainScreen windowSize={windowSize}/>
       <EventsScreen windowSize={windowSize}/>
     </main>

@@ -1,5 +1,9 @@
 import React from "react";
 
+export const isValidEmail = (value: string) => {
+  return /^\S+@\S+\.\S+$/.test(value);
+};
+
 export const onAnimationStart = (e: React.AnimationEvent<HTMLElement>) => {
   (e.target as HTMLElement).classList.remove('no-margin')
 }

@@ -1,6 +1,7 @@
 export * from './Panel/Panel';
 export * from './Timer/Timer';
 export * from './Title/Title';
+export * from './Popup/Popup';
 export * from './EventItem/EventItem';
 export * from './CheckEvent/CheckEvent';
 export * from './EventsList/EventsList';

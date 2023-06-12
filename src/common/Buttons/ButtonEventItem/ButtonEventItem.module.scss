@@ -20,9 +20,9 @@
 
   &:hover {
     color: rgba(255, 255, 255, 1);
-    background: rgb(22, 44, 78);
+    background: linear-gradient(270deg, rgba(22, 44, 78, 0) 0%, rgb(22, 44, 78) 100%);
 
-    transition: background .3s ease-in-out, background .3s ease-in-out;
+    transition: color .3s ease-in-out;
   }
 
   @media (max-width: 768px) {

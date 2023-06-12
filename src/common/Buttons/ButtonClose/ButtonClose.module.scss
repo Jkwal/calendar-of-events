@@ -1,0 +1,19 @@
+.buttonClose {
+  width: 200px;
+  min-height: 59.68px;
+
+  border-radius: 40px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+
+  background: #1D4169;
+  color: #FFFFFF;
+
+  transition: background-color .3s ease-in-out;
+
+  &:hover{
+    background-color: #005391;
+  }
+}

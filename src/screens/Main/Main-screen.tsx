@@ -47,7 +47,10 @@ export const MainScreen: FC<MainScreenProps> = ({windowSize}) => {
 
   return (
     <>
-      <section className={styles.mainScreen}>
+      <section
+        id="popup-root"
+        className={styles.mainScreen}
+      >
 
         <LeftSvgComponent className={styles.LeftSvg}/>
         <RightSvgComponent className={styles.RightSvg}/>
