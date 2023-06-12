@@ -4,6 +4,7 @@
   width: 90%;
   margin-top: 34px;
 
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,7 +33,7 @@
   animation-duration: $animation-duration;
   animation-name: marginAnimation;
   animation-iteration-count: 1;
-  animation-delay: 1.7s;
+  animation-delay: 1s;
 }
 
 @keyframes marginAnimation {
