@@ -8,17 +8,19 @@ import {ButtonEventItem} from "common";
 interface EventItemProps {
   item: ImockEvent;
   isActive: boolean;
+  windowSize: number;
   setActiveEventItem: (item: ImockEvent) => void;
 }
 
 export const EventItem: FC<EventItemProps> = ({
                                                 item,
                                                 isActive,
+                                                windowSize,
                                                 setActiveEventItem
                                               }) => {
 
   const backgroundStyle = {
-    backgroundImage: `linear-gradient(180deg, rgba(22, 44, 78, 0) 0%, #162C4E 100%), url(${item.image})`,
+    backgroundImage: `linear-gradient(${windowSize <= 768 ? `270deg` : `180deg`}, rgba(22, 44, 78, 0) 0%, #162C4E 100%), url(${item.image})`,
   };
 
   const backgroundStyleDescription = {
@@ -28,7 +30,7 @@ export const EventItem: FC<EventItemProps> = ({
   return (
     <div className={`${styles.event} ${isActive ? styles.active : ''}`}>
       <div
-        style={backgroundStyle}
+        style={item.id !== 1 ? backgroundStyle : {}}
         className={styles.title}
         onClick={() => !isActive ? setActiveEventItem(item) : null}
       >

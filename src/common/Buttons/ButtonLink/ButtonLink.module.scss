@@ -18,6 +18,12 @@
   color: #FFFFFF;
   background-color: #1D4169;
 
+  transition: background-color .3s ease-in-out;
+
+  &:hover{
+    background-color: #2d5f9d;
+  }
+
   .arrow {
     position: absolute;
     top: 20px;

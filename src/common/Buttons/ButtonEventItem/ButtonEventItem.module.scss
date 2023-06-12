@@ -16,8 +16,14 @@
   line-height: 22px;
   letter-spacing: 0.03em;
 
-
   color: rgba(255, 255, 255, 0.8);
+
+  &:hover {
+    color: rgba(255, 255, 255, 1);
+    background: rgb(22, 44, 78);
+
+    transition: background .3s ease-in-out, background .3s ease-in-out;
+  }
 
   @media (max-width: 768px) {
     width: 169px;

@@ -1,4 +1,4 @@
-import {FC, useEffect, useState} from "react";
+import {FC} from "react";
 
 import styles from './Main-screen.module.scss';
 
@@ -20,23 +20,11 @@ function onAnimationStart(e: any) {
   (e.target as HTMLElement).classList.remove('no-margin')
 }
 
-export const MainScreen: FC = () => {
+interface MainScreenProps {
+  windowSize: number;
+}
 
-  const [windowSize, setWindowSize] = useState(
-    window.innerWidth
-  );
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowSize(window.innerWidth);
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
+export const MainScreen: FC<MainScreenProps> = ({windowSize}) => {
 
   let LogoComponent;
   let LeftSvgComponent;

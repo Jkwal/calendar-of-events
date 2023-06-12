@@ -6,7 +6,11 @@ import {ImockEvent, mockEvents} from "utils";
 import {EventItem} from "components";
 
 
-export const EventsList: FC = () => {
+interface EventsListProps {
+  windowSize: number;
+}
+
+export const EventsList: FC<EventsListProps> = ({windowSize}) => {
 
   const [activeEventItem, setActiveEventItem] = useState<ImockEvent>(mockEvents[0])
 
@@ -15,10 +19,11 @@ export const EventsList: FC = () => {
       {
         mockEvents.map((item) => (
           <EventItem
-            isActive={activeEventItem === item}
-            setActiveEventItem={setActiveEventItem}
-            key={item.id}
             item={item}
+            key={item.id}
+            windowSize={windowSize}
+            setActiveEventItem={setActiveEventItem}
+            isActive={activeEventItem === item}
           />
         ))
       }

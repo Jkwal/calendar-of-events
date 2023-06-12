@@ -1,18 +1,16 @@
 @import "styles/variables";
 
 .event {
-  margin: 4px;
+  margin: 0 2px;
 
   display: flex;
-
-  background-color: #162C4E;
-
 
   @media (max-width: 768px) {
     width: 100%;
     max-width: 688px;
+    margin: 2px 0;
 
-    flex-direction: column;
+    flex-direction: column-reverse;
 
     transform: scaleX(-1);
   }
@@ -24,6 +22,20 @@
 }
 
 .event:not(.active) {
+  .title {
+    border-bottom: 2px solid #FF1E00;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      box-shadow: 0 0 10px #FF1E00;
+    }
+  }
+
   .animationWrapper {
     max-width: 0;
 
@@ -54,9 +66,11 @@
 }
 
 .title {
+  position: relative;
   width: 85px;
   max-width: 85px;
   padding-bottom: 20px;
+
 
   display: flex;
   flex-direction: column;
@@ -67,8 +81,11 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #162C4E;
 
+  cursor: pointer;
   z-index: 1;
+
 
   @media (max-width: 768px) {
     width: 100%;
@@ -76,6 +93,7 @@
     height: 85px;
     padding-bottom: 0;
     padding-left: 40px;
+    margin-top: 4px;
 
     align-items: center;
     justify-content: space-between;
@@ -83,6 +101,7 @@
     gap: 0;
 
     transform: scaleX(-1);
+
   }
 
   @media (max-width: 360px) {
@@ -156,6 +175,7 @@
   min-width: 995px;
   max-width: 995px;
   height: 681px;
+  margin-left: 1px;
 
   display: flex;
   justify-content: flex-end;
@@ -170,6 +190,7 @@
     width: 100%;
     min-width: initial;
     max-width: none;
+    margin-left: 0;
 
     align-items: flex-end;
   }

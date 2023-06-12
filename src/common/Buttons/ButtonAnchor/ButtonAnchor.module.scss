@@ -1,11 +1,19 @@
 .buttonAnchor {
   position: relative;
 
-  width: 240px;
+  width: 130px;
   min-height: 30px;
   margin-top: -17px;
 
   background-color: rgba(0, 0, 0, 0);
+
+
+  &:focus {
+    .arrow {
+      transform: rotate(180deg);
+      transition: transform .3s ease-in-out;
+    }
+  }
 
   @media (max-width: 768px) {
     margin-top: 0;
@@ -14,11 +22,11 @@
   .arrow {
     position: absolute;
     top: 3px;
-    right: 21px;
+    right: -30px;
 
     @media (max-width: 768px) {
       top: 4px;
-      right: 42px;
+      right: -12px;
     }
   }
 }
