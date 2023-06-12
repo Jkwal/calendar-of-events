@@ -57,7 +57,7 @@ export const MainScreen: FC<MainScreenProps> = ({windowSize}) => {
 
         <div className={styles.wrapper}>
 
-          <a href='/'>
+          <a href='https://jkwal.github.io/calendar-of-events/'>
             <LogoComponent
               className={`${styles.logo} ${styles.marginAnimation} no-margin`}
               onAnimationStart={onAnimationStart}

@@ -41,6 +41,15 @@
 
 .close {
   align-self: self-end;
+
+  cursor: pointer;
+
+  &:hover{
+    path{
+      fill: blue;
+    }
+
+  }
 }
 
 .inner {

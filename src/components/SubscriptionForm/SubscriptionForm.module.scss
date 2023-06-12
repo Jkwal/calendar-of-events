@@ -27,3 +27,17 @@
     width: 360px;
   }
 }
+
+.error {
+  position: absolute;
+  padding: 3px;
+  border: #FF1E00 solid 1px;
+
+  top: -36px;
+  right: 40%;
+
+  font-weight: 600;
+
+  color: #FF1E00;
+  background-color: rgba(255, 30, 0, 0.07);
+}

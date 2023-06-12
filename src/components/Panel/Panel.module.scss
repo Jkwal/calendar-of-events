@@ -1,7 +1,9 @@
 .panel {
   width: 100%;
   min-height: 17vh;
+  padding-top: 30px;
   padding-right: 130px;
+
 
   display: flex;
   align-items: center;
@@ -16,6 +18,8 @@
   }
 
   @media (max-width: 768px) {
+    padding-top: 30px;
+
     min-height: 160px;
   }
 

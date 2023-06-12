@@ -23,15 +23,12 @@ export const SubscriptionForm: FC = () => {
     event.preventDefault();
 
     if (!email || !isValidEmail(email)) {
-      setValid(false);
-      return console.log('Invalid email');
+      return setValid(false);
     }
 
     if (isValidEmail(email)) {
       setEmail('')
-      setShowPopup(true);
-
-      return console.log('true');
+      return setShowPopup(true);
     }
   };
 
@@ -52,6 +49,10 @@ export const SubscriptionForm: FC = () => {
           placeholder={"Enter your Email and get notified"}
         />
         <ButtonSubmit/>
+        {
+          !isValid &&
+            <div className={styles.error}>Invalid Email!!!</div>
+        }
       </form>
 
       {showPopup &&
