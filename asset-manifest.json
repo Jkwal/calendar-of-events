@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/calendar-of-events/static/css/main.b43cde1a.css",
-    "main.js": "/calendar-of-events/static/js/main.0d48748f.js",
+    "main.css": "/calendar-of-events/static/css/main.76a94ab1.css",
+    "main.js": "/calendar-of-events/static/js/main.2b2db4b6.js",
     "static/media/SFProDisplay-Semibold.eot": "/calendar-of-events/static/media/SFProDisplay-Semibold.a909a57a0c2db31e17fc.eot",
     "static/media/SFProDisplay-Semibold.ttf": "/calendar-of-events/static/media/SFProDisplay-Semibold.dfc89e609e62dde18375.ttf",
     "static/media/SFProDisplay-Medium.eot": "/calendar-of-events/static/media/SFProDisplay-Medium.c227ee1b22a21ca9441a.eot",
@@ -29,11 +29,11 @@
     "static/media/timer_element-S.svg": "/calendar-of-events/static/media/timer_element-S.c7842766f616852f78570ca718954c4b.svg",
     "static/media/arrow_right.svg": "/calendar-of-events/static/media/arrow_right.e6db47c2f236770bfbd1026a4f080970.svg",
     "static/media/arrow_down.svg": "/calendar-of-events/static/media/arrow_down.ad9f2ffde9cf9c056b484366b6dc5f76.svg",
-    "main.b43cde1a.css.map": "/calendar-of-events/static/css/main.b43cde1a.css.map",
-    "main.0d48748f.js.map": "/calendar-of-events/static/js/main.0d48748f.js.map"
+    "main.76a94ab1.css.map": "/calendar-of-events/static/css/main.76a94ab1.css.map",
+    "main.2b2db4b6.js.map": "/calendar-of-events/static/js/main.2b2db4b6.js.map"
   },
   "entrypoints": [
-    "static/css/main.b43cde1a.css",
-    "static/js/main.0d48748f.js"
+    "static/css/main.76a94ab1.css",
+    "static/js/main.2b2db4b6.js"
   ]
 }
