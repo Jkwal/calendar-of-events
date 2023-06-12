@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/calendar-of-events/static/css/main.383f932a.css",
-    "main.js": "/calendar-of-events/static/js/main.2b2db4b6.js",
+    "main.css": "/calendar-of-events/static/css/main.0733f63c.css",
+    "main.js": "/calendar-of-events/static/js/main.9f97cdc4.js",
     "static/media/SFProDisplay-Semibold.eot": "/calendar-of-events/static/media/SFProDisplay-Semibold.a909a57a0c2db31e17fc.eot",
     "static/media/SFProDisplay-Semibold.ttf": "/calendar-of-events/static/media/SFProDisplay-Semibold.dfc89e609e62dde18375.ttf",
     "static/media/SFProDisplay-Medium.eot": "/calendar-of-events/static/media/SFProDisplay-Medium.c227ee1b22a21ca9441a.eot",
@@ -23,17 +23,18 @@
     "static/media/abstraction_right-S.svg": "/calendar-of-events/static/media/abstraction_right-S.d83baba6f817b68f4f3c2177bb9cc8a7.svg",
     "static/media/abstraction_right-M.svg": "/calendar-of-events/static/media/abstraction_right-M.936fe768087c390992db81247af7d111.svg",
     "index.html": "/calendar-of-events/index.html",
+    "static/media/close.svg": "/calendar-of-events/static/media/close.02d6452572b183d3b83d51b9903db1e1.svg",
     "static/media/separator-M.svg": "/calendar-of-events/static/media/separator-M.6f49a49b61335f4a23554d0f4c6b2344.svg",
     "static/media/separator-S.svg": "/calendar-of-events/static/media/separator-S.bfaa2913e55764eab2a175d877d976e0.svg",
     "static/media/timer_element-M.svg": "/calendar-of-events/static/media/timer_element-M.4105548aacf9ccb47bc2e1cd0ef959b3.svg",
     "static/media/timer_element-S.svg": "/calendar-of-events/static/media/timer_element-S.c7842766f616852f78570ca718954c4b.svg",
     "static/media/arrow_right.svg": "/calendar-of-events/static/media/arrow_right.e6db47c2f236770bfbd1026a4f080970.svg",
     "static/media/arrow_down.svg": "/calendar-of-events/static/media/arrow_down.ad9f2ffde9cf9c056b484366b6dc5f76.svg",
-    "main.383f932a.css.map": "/calendar-of-events/static/css/main.383f932a.css.map",
-    "main.2b2db4b6.js.map": "/calendar-of-events/static/js/main.2b2db4b6.js.map"
+    "main.0733f63c.css.map": "/calendar-of-events/static/css/main.0733f63c.css.map",
+    "main.9f97cdc4.js.map": "/calendar-of-events/static/js/main.9f97cdc4.js.map"
   },
   "entrypoints": [
-    "static/css/main.383f932a.css",
-    "static/js/main.2b2db4b6.js"
+    "static/css/main.0733f63c.css",
+    "static/js/main.9f97cdc4.js"
   ]
 }
