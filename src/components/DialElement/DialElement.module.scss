@@ -1,12 +1,12 @@
+@import "styles/fonts";
+@import "styles/mixins";
+
 .dialElement {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex-center(column);
 }
 
 .time {
-  font-weight: 600;
-  font-size: 72px;
+  @include font-poppins(600, 72px);
   line-height: 72px;
 
   color: #162C4E;
@@ -21,18 +21,13 @@
   position: relative;
 }
 
-.timerElement {
-
-}
-
 .unit {
   position: absolute;
   top: 45%;
   left: 47%;
   transform: translate(-50%, -50%);
 
-  font-weight: 400;
-  font-size: 16px;
+  @include font-poppins(400, 16px);
   line-height: 16px;
 
   color: #FFFFFF;

@@ -1,31 +1,26 @@
+@import "styles/mixins";
+@import 'styles/animation';
 @import "styles/variables";
 
 .mainScreen {
   position: relative;
   height: 100vh;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  @include flex-space-between(column);
 }
 
 .wrapper {
   padding-bottom: 3vh;
   margin-top: 6vh;
 
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  @include flex-space-between(column);
 
   @media (max-width: 768px) {
-    margin-top: 100px;
+    margin-top: 10vh;
   }
 
   @media (max-width: 360px) {
-    margin-top: 70px;
+    margin-top: 7vh;
   }
 }
 
@@ -61,47 +56,13 @@
   animation-name: from-right-to-left;
 }
 
-@keyframes from-left-to-right {
-  from {
-    transform: translate(-1000px, -1000px);
-    opacity: 0;
-  }
-
-  to {
-    transform: translate(0, 0);
-    opacity: 1;
-  }
-}
-
-@keyframes from-right-to-left {
-  from {
-    transform: translate(1000px, -1000px);
-    opacity: 0;
-  }
-
-  to {
-    transform: translate(0, 0);
-    opacity: 1;
-  }
-}
-
 
 .marginAnimation {
   animation-duration: $animation-duration;
-  animation-name: marginAnimation;
+  animation-name: margin-animation;
   animation-iteration-count: 1;
 }
 
-@keyframes marginAnimation {
-  from {
-    opacity: 0;
-    margin-top: -20px;
-  }
 
-  to {
-    opacity: 1;
-    margin-top: 0;
-  }
-}
 
 

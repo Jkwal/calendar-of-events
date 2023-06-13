@@ -1,13 +1,13 @@
+@import "styles/mixins";
 @import "styles/variables";
+@import "styles/animation";
 
 .timer {
   width: 90%;
   margin-top: 3vh;
 
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex-space-between();
 
   @media (max-width: 768px) {
     width: 80%;
@@ -19,7 +19,7 @@
   }
 }
 
-.sepatator {
+.separator {
   margin-top: 2vh;
   align-self: flex-start;
 
@@ -31,19 +31,9 @@
 
 .marginAnimation {
   animation-duration: $animation-duration;
-  animation-name: marginAnimation;
+  animation-name: margin-animation-timer;
   animation-iteration-count: 1;
   animation-delay: 1s;
 }
 
-@keyframes marginAnimation {
-  from {
-    opacity: 0;
-    margin-top: 0;
-  }
 
-  to {
-    opacity: 1;
-    margin-top: 3vh;
-  }
-}

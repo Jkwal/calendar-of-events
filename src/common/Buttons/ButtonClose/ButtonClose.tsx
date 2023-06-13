@@ -4,7 +4,7 @@ import styles from './ButtonClose.module.scss';
 
 
 interface ButtonCloseProps {
-  onClose: any
+  onClose: () => void
 }
 
 

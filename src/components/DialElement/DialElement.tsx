@@ -2,6 +2,8 @@ import {FC} from "react";
 
 import styles from './DialElement.module.scss';
 
+import {unitMap} from "utils";
+
 import {ReactComponent as TimerElementM} from "assets/icons/timer_element-M.svg";
 import {ReactComponent as TimerElementS} from "assets/icons/timer_element-S.svg";
 
@@ -12,12 +14,6 @@ interface DialElementProps {
   windowSize: number;
 }
 
-const unitMap: Record<string, string> = {
-  Days: "DD",
-  Hours: "HH",
-  Minutes: "MM",
-  Seconds: "SS"
-};
 
 export const DialElement: FC<DialElementProps> = ({
                                                     unit,

@@ -2,7 +2,7 @@ import {FC, useState} from "react";
 
 import styles from './EventsList.module.scss';
 
-import {ImockEvent, mockEvents} from "utils";
+import {IMockEvent, mockEvents} from "utils";
 import {EventItem} from "components";
 
 
@@ -12,7 +12,7 @@ interface EventsListProps {
 
 export const EventsList: FC<EventsListProps> = ({windowSize}) => {
 
-  const [activeEventItem, setActiveEventItem] = useState<ImockEvent>(mockEvents[0])
+  const [activeEventItem, setActiveEventItem] = useState<IMockEvent>(mockEvents[0])
 
   return (
     <div className={styles.eventList}>

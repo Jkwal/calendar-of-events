@@ -1,3 +1,6 @@
+@import "styles/fonts";
+@import "styles/mixins";
+
 .buttonLink {
   position: relative;
 
@@ -7,12 +10,9 @@
 
   border-radius: 40px;
 
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  @include flex-flex-start();
 
-  font-size: 18px;
-  font-weight: 400;
+  @include font-poppins();
   line-height: 27px;
 
   color: #FFFFFF;
@@ -20,7 +20,7 @@
 
   transition: background-color .3s ease-in-out;
 
-  &:hover{
+  &:hover {
     background-color: #005391;
   }
 

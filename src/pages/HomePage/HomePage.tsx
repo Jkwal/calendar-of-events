@@ -1,7 +1,5 @@
 import {FC, useEffect, useState} from "react";
 
-import styles from './HomePage.module.scss';
-
 import {EventsScreen, MainScreen} from "screens";
 
 
@@ -24,8 +22,7 @@ export const HomePage: FC = () => {
   }, []);
 
   return (
-    <main
-      className={styles.homePage}>
+    <main>
       <MainScreen windowSize={windowSize}/>
       <EventsScreen windowSize={windowSize}/>
     </main>

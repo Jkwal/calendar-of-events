@@ -2,14 +2,14 @@ import {FC} from "react";
 
 import styles from './EventItem.module.scss';
 
-import {ImockEvent} from "utils";
+import {IMockEvent} from "utils";
 import {ButtonEventItem} from "common";
 
 interface EventItemProps {
-  item: ImockEvent;
+  item: IMockEvent;
   isActive: boolean;
   windowSize: number;
-  setActiveEventItem: (item: ImockEvent) => void;
+  setActiveEventItem: (item: IMockEvent) => void;
 }
 
 export const EventItem: FC<EventItemProps> = ({

@@ -1,3 +1,5 @@
+@import "styles/fonts";
+
 .buttonAnchor {
   position: relative;
 
@@ -32,8 +34,7 @@
 }
 
 .text {
-  font-size: 20px;
-  font-weight: 400;
+  @include font-poppins();
   line-height: 27px;
 
   color: #FFFFFF;

@@ -1,19 +1,19 @@
+@import "styles/fonts";
+@import "styles/mixins";
 @import "styles/variables";
+@import "styles/animation";
 
 .title {
   margin-top: 8vh;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex-center(column);
   row-gap: 8px;
 }
 
 .heading {
   width: 100%;
 
-  font-size: 72px;
-  font-weight: 700;
+  @include font-poppins(700, 72px);
   line-height: 75px;
   text-align: center;
   text-transform: uppercase;
@@ -36,8 +36,7 @@
 .subHeading {
   width: 54%;
 
-  font-size: 18px;
-  font-weight: 400;
+  @include font-poppins();
   line-height: 27px;
   text-align: center;
 
@@ -56,19 +55,8 @@
 
 .marginAnimation {
   animation-duration: $animation-duration;
-  animation-name: marginAnimation;
+  animation-name: margin-animation-title;
   animation-iteration-count: 1;
   animation-delay: .5s;
 }
 
-@keyframes marginAnimation {
-  from {
-    opacity: 0;
-    margin-top: 0;
-  }
-
-  to {
-    opacity: 1;
-    margin-top: 8vh;
-  }
-}

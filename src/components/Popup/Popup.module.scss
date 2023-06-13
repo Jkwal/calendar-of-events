@@ -1,3 +1,6 @@
+@import "styles/fonts";
+@import "styles/mixins";
+
 .overlay {
   position: fixed;
   top: 0;
@@ -18,10 +21,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  @include flex-flex-start(column);
 
   border: 1px solid rgba(19, 89, 120, 0.07);
   border-radius: 2px;
@@ -33,10 +33,8 @@
 .wrapper {
   width: 90%;
   min-height: 80%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+
+  @include flex-space-between(column);
 }
 
 .close {
@@ -44,8 +42,8 @@
 
   cursor: pointer;
 
-  &:hover{
-    path{
+  &:hover {
+    path {
       fill: blue;
     }
 
@@ -55,15 +53,11 @@
 .inner {
   min-height: 75%;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  @include flex-space-between(column);
 }
 
 .title {
-  font-weight: 700;
-  font-size: 36px;
+  @include font-poppins(700, 36px);
   line-height: 37px;
   text-align: center;
   text-transform: uppercase;
@@ -72,8 +66,7 @@
 }
 
 .subtitle {
-  font-weight: 400;
-  font-size: 16px;
+  @include font-poppins(400, 16px);
   line-height: 24px;
   text-align: center;
 

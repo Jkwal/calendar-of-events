@@ -1,4 +1,7 @@
+@import 'styles/fonts';
+@import 'styles/mixins';
 @import "styles/variables";
+@import 'styles/animation';
 
 .event {
   margin: 0 2px;
@@ -72,10 +75,7 @@
   padding-bottom: 20px;
 
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
+  @include flex-flex-end(column);
   gap: 280px;
 
   background-position: center;
@@ -101,7 +101,6 @@
     gap: 0;
 
     transform: scaleX(-1);
-
   }
 
   @media (max-width: 360px) {
@@ -111,13 +110,8 @@
 }
 
 .number {
-  font-family: 'SF Pro Display', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 40px;
+  @include font-sf-pro-display(500, 40px);
   line-height: 40px;
-
-
   text-align: right;
   letter-spacing: -0.03em;
 
@@ -137,10 +131,7 @@
 .name {
   width: 482px;
 
-  font-family: 'SF Pro Display', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
+  @include font-sf-pro-display(600, 32px);
   line-height: 32px;
 
   color: #FFFFFF;
@@ -196,7 +187,6 @@
   }
 
   @media (max-width: 360px) {
-    width: 320px;
     min-width: initial;
     max-width: none;
     height: 376px;
@@ -210,10 +200,7 @@
   top: -38px;
   right: 92px;
 
-  font-family: 'SF Pro Display', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 380px;
+  @include font-sf-pro-display(600, 380px);
   line-height: 380px;
 
   text-align: right;
@@ -240,11 +227,10 @@
 
 .info {
   width: 364px;
-  padding: 0 40px 50px 40px;
+  padding: 0 10px 50px 40px;
 
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: flex-end;
 
   transform: scaleX(-1);
@@ -252,7 +238,7 @@
   backdrop-filter: blur(20px);
 
   @media (max-width: 768px) {
-    width: 688px;
+    width: 100%;
     height: 192px;
     align-items: flex-start;
 
@@ -260,7 +246,6 @@
   }
 
   @media (max-width: 360px) {
-    width: 320px;
     height: 158px;
     padding-left: 20px;
     padding-bottom: 20px;
@@ -269,6 +254,7 @@
 
 .wrapper {
   height: 25%;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -279,10 +265,7 @@
 }
 
 .descriptionName {
-  font-family: 'SF Pro Display', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
+  @include font-sf-pro-display(600, 24px);
   line-height: 29px;
 
   color: #FFFFFF;
@@ -299,10 +282,7 @@
 }
 
 .date {
-  font-family: 'SF Pro Display', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
+  @include font-sf-pro-display();
   line-height: 27px;
 
   color: rgba(255, 255, 255, 0.8);

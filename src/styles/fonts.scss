@@ -34,4 +34,26 @@
   font-style: normal;
 }
 
+@mixin font-poppins($weight: 400, $size: 18px) {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: $weight;
+  font-size: $size;
+}
+
+@mixin font-sf-pro-display($weight: 400, $size: 18px) {
+  font-family: 'SF Pro Display', sans-serif;
+  font-style: normal;
+  font-weight: $weight;
+  font-size: $size;
+}
+
+@mixin font-roboto($weight: 400, $size: 18px) {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: $weight;
+  font-size: $size;
+}
+
+
 

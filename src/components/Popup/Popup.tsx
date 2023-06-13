@@ -7,7 +7,7 @@ import {ReactComponent as Close} from "assets/icons/close.svg";
 
 
 interface PopupProps {
-  onClose: any
+  onClose: () => void;
 }
 
 

@@ -46,7 +46,7 @@ export const Timer: FC<TimerProps> = ({windowSize}) => {
         windowSize={windowSize}
       />
 
-      <SeparatorComponent className={styles.sepatator}/>
+      <SeparatorComponent className={styles.separator}/>
 
       <DialElement
         time={hours}
@@ -54,7 +54,7 @@ export const Timer: FC<TimerProps> = ({windowSize}) => {
         windowSize={windowSize}
       />
 
-      <SeparatorComponent className={styles.sepatator}/>
+      <SeparatorComponent className={styles.separator}/>
 
       <DialElement
         time={minutes}
@@ -62,7 +62,7 @@ export const Timer: FC<TimerProps> = ({windowSize}) => {
         windowSize={windowSize}
       />
 
-      <SeparatorComponent className={styles.sepatator}/>
+      <SeparatorComponent className={styles.separator}/>
 
       <DialElement
         time={seconds}

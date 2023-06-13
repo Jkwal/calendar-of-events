@@ -2,6 +2,7 @@ import {FC} from "react";
 
 import styles from './Main-screen.module.scss';
 
+import {onAnimationStartMainScreen} from "utils";
 import {CheckEvent, Panel, Timer, Title} from "components";
 
 import {ReactComponent as LogoM} from "assets/icons/logo-M.svg";
@@ -16,9 +17,8 @@ import {ReactComponent as RightSvgM} from 'assets/icons/abstraction_right-M.svg'
 import {ReactComponent as LeftSvgS} from 'assets/icons/abstraction_left-S.svg';
 import {ReactComponent as RightSvgS} from 'assets/icons/abstraction_right-S.svg';
 
-function onAnimationStart(e: any) {
-  (e.target as HTMLElement).classList.remove('no-margin')
-}
+
+
 
 interface MainScreenProps {
   windowSize: number;
@@ -60,7 +60,7 @@ export const MainScreen: FC<MainScreenProps> = ({windowSize}) => {
           <a href='https://jkwal.github.io/calendar-of-events/'>
             <LogoComponent
               className={`${styles.logo} ${styles.marginAnimation} no-margin`}
-              onAnimationStart={onAnimationStart}
+              onAnimationStart={onAnimationStartMainScreen}
             />
           </a>
 

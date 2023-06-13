@@ -1,11 +1,12 @@
+@import "styles/fonts";
+@import "styles/mixins";
 @import "styles/variables";
+@import "styles/animation";
 
 .checkEvent {
   margin-top: 6vh;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex-center(column);
   row-gap: 11px;
 
   @media(max-width: 768px) {
@@ -18,8 +19,7 @@
 }
 
 .title {
-  font-weight: 400;
-  font-size: 18px;
+  @include font-poppins();
   line-height: 27px;
 
   @media(max-width: 768px) {
@@ -31,19 +31,8 @@
 
 .marginAnimation {
   animation-duration: $animation-duration;
-  animation-name: marginAnimation;
+  animation-name: margin-animation-check-event;
   animation-iteration-count: 1;
   animation-delay: 1.5s;
 }
 
-@keyframes marginAnimation {
-  from {
-    opacity: 0;
-    margin-top: 0;
-  }
-
-  to {
-    opacity: 1;
-    margin-top: 6vh;
-  }
-}
