@@ -4,7 +4,7 @@
 
 .mainScreen {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
 
   @include flex-space-between(column);
 }
