@@ -34,8 +34,13 @@ export const EventItem: FC<EventItemProps> = ({
         className={styles.title}
         onClick={() => !isActive ? setActiveEventItem(item) : null}
       >
-        <div className={styles.name}>{item.name}</div>
-        <div className={styles.number}>0{item.id}</div>
+          <div className={styles.titleWrapper}>
+              <div className={styles.nameWrapper}>
+                  <div className={styles.name}>{item.name}</div>
+              </div>
+              <div className={styles.number}>0{item.id}</div>
+          </div>
+
       </div>
 
       <div className={styles.animationWrapper}>
